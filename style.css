@@ -471,7 +471,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
 .team .person{
     width: 20%;
     background: white;
-    padding: 1%;
+    padding: 1.5%;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
 }
@@ -580,7 +580,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     display: flex;
     justify-content: space-between;
     padding-bottom: 3%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(230, 229, 229);
 }
 .footer-content .widget-one{
     width: 32%;
@@ -931,9 +931,9 @@ nav .nav-content-mobile-view .signup-btn:hover{
         align-items: center;
     }
     .team .person{
-        width: 70%;
-        padding: 3%;
-        margin-top: 5%;
+        width: 86%;
+        padding: 7%;
+        margin-top: 8%;
     }
     /* Team Section Mobile View end */
 
