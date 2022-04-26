@@ -106,14 +106,15 @@ nav{
     color: white;
     padding: 1rem;
     cursor: pointer;
+    font-size: 1rem;
 }
-.login-and-signup-buttons .signup-btn,
-.start-btn{
+.login-and-signup-buttons .signup-btn{
     border: none;
     background: #FD4C5C;
     color: white;
     padding: 0.6rem 1.5rem;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 #check{
@@ -168,6 +169,8 @@ nav .nav-content-mobile-view .signup-btn{
     padding: 1rem;
     cursor: pointer;
     width: 40%;
+    font-size: 1.5rem;
+    border-radius: 15px;
 }
 nav .nav-content-mobile-view .login-btn{
     background: rgba(72, 223, 34, 0.829);
@@ -254,6 +257,11 @@ nav .nav-content-mobile-view .signup-btn:hover{
     padding: 0.6rem 1.5rem;
     cursor: pointer;
     border-radius: 3px;
+    font-size: 1rem;
+}
+.video-section-text-and-button .download-btn:hover{
+    color: black;
+    transition: all 0.5s;
 }
 .video-section-content .video{
     width: 50%;
@@ -332,6 +340,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     cursor: pointer;
     margin-top: 4%;
     border-radius: 3px;
+    font-size: 1rem;
 }
 .about-content-text-and-button .start-btn:hover{
     color: black;
@@ -352,38 +361,38 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 .users{
     background: #d4f0eb;
-    width: 21%;
+    width: 19%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5%;
+    padding: 1.5% 2.5%;
     border-radius: 0.5rem;
 }
 .download{
     background: #dbcdf0;
-    width: 21%;
+    width: 19%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5%;
+    padding: 1.5% 2.5%;
     border-radius: 0.5rem;
 }
 .likes{
     background: rgb(241, 206, 206);
-    width: 21%;
+    width: 19%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5%;
+    padding: 1.5% 2.5%;
     border-radius: 0.5rem;
 }
 .rating{
     background: rgb(245, 245, 205);
-    width: 21%;
+    width: 19%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5%;
+    padding: 1.5% 2.5%;
     border-radius: 0.5rem;
 }
 .users-bulk,
@@ -391,10 +400,6 @@ nav .nav-content-mobile-view .signup-btn:hover{
 .likes-bulk,
 .rating-bulk{
     font-size: 3rem;
-}
-.factor .normal-text{
-    width: 50%;
-    margin-left: 4%;
 }
 /* Factor end */
 
@@ -636,6 +641,18 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 /* Footer end */
 
+@media (max-width: 1200px){
+    .users-bulk,
+    .download-bulk,
+    .likes-bulk,
+    .rating-bulk{
+        font-size: 2rem;
+    }
+    .normal-text{
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 900px){
     :root{
         font-size: 14px;
@@ -646,8 +663,10 @@ nav .nav-content-mobile-view .signup-btn:hover{
     .about-left-content img{
         width: 20%;
     }
-    .download{
-        width: 22%;
+}
+@media (max-width: 800px){
+    :root{
+        font-size: 13px;
     }
 }
 @media (max-width: 700px){
@@ -880,32 +899,19 @@ nav .nav-content-mobile-view .signup-btn:hover{
     .factor{
         flex-direction: column;
     }
-    .users{
-        width: 100%;
-        margin: 2% 0;
-    }
-    .download{
-        width: 100%;
-        margin: 2% 0;
-    }
-    .likes{
-        width: 100%;
-        margin: 2% 0;
-    }
+    .users,
+    .download,
+    .likes,
     .rating{
-        width: 100%;
+        width: 95%;
         margin: 2% 0;
+        justify-content: space-evenly;
     }
     .users-bulk,
     .download-bulk,
     .likes-bulk,
     .rating-bulk{
-        width: 50%;
-        text-align: center;
-    }
-    .factor .normal-text{
-        margin-left: 0%;
-        text-align: center;
+        font-size: 3.5rem;
     }
     /* Factor Mobile View end */
 
@@ -1017,7 +1023,8 @@ nav .nav-content-mobile-view .signup-btn:hover{
     width: 5%;
     }
     .footer-text{
-        padding: 3% 0;
+        font-size: 1rem;
+        padding: 6% 0;
         text-align: start;
         margin-left: 10%;
     }
