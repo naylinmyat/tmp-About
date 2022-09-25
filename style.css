@@ -35,7 +35,7 @@ body{
     font-family: 'Karla', sans-serif;
 }
 p{
-    color: rgb(128, 125, 125);
+    color: #84899d;
     font-weight: lighter;
 }
 h1{
@@ -202,7 +202,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     font-size: 4rem;
 }
 .hero-body-content > p{
-    color: rgb(204, 199, 199);
+    color: whitesmoke;
     margin: 2% 0 4% 0;
 }
 .hero-body-content .mobile-view-hero-paragraph{
@@ -240,9 +240,9 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 .video-section-content > img{
     position: absolute;
-    width: 25%;
-    top: -12%;
-    right: -4%;
+    width: 12%;
+    top: -6%;
+    right: -2%;
     z-index: 1;
 }
 .video-section-text-and-button{
@@ -479,6 +479,11 @@ nav .nav-content-mobile-view .signup-btn:hover{
     background: white;
     padding: 1.5%;
     border-radius: 0.5rem;
+    cursor: pointer;
+    /* box-shadow: 0 10px 15px rgb(0 0 0 / 20%); */
+}
+.team .person:hover{
+    transition: all 0.5s;
     box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
 }
 .team .person img{
@@ -561,8 +566,12 @@ nav .nav-content-mobile-view .signup-btn:hover{
 .CTA-content .text-group{
     width: 50%;
 }
+.CTA-content h2{
+    font-size: 2rem;
+}
 .CTA-content p{
     padding-top: 2%;
+    line-height: 1.5rem;
 }
 .CTA-content .btn-group{
     width: 33%;
@@ -587,6 +596,9 @@ nav .nav-content-mobile-view .signup-btn:hover{
     justify-content: space-between;
     padding-bottom: 3%;
     border-bottom: 1px solid rgb(230, 229, 229);
+}
+.footer-content p{
+    color: #84899d;
 }
 .footer-content .widget-one{
     width: 32%;
@@ -632,13 +644,14 @@ nav .nav-content-mobile-view .signup-btn:hover{
 .phone-number span,
 .email span{
     margin-left: 5%;
-    color: rgb(107, 104, 104);
+    color: #84899d;
 }
 .footer-text{
     text-align: center;
     padding: 1.2% 0;
     margin-bottom: 0;
     font-size: 0.8rem;
+    color: #84899d;
 }
 /* Footer end */
 
@@ -655,7 +668,32 @@ nav .nav-content-mobile-view .signup-btn:hover{
     .factor .normal-text{
         font-size: 1.2rem;
     }
+
+    /* Video Section start */
+    .video-section-content > img{
+        top: -8%;
+    }
+    .video-section-text-and-button{
+        width: 35%;
+        line-height: 1.5;
+    }
+    /* Video Section end */
+
+    .about-content-text-and-button .text-group h2{
+        font-size: 3.2rem;
+    }
+
+    .CTA-content h2{
+        font-size: 3.2rem;
+    }
 }
+
+@media (max-width: 1499px){
+    .CTA-content h2{
+        font-size: 2.8rem;
+    }
+}
+
 @media (max-width: 1200px){
     .users-bulk,
     .download-bulk,
@@ -665,6 +703,9 @@ nav .nav-content-mobile-view .signup-btn:hover{
     }
     .normal-text{
         font-size: 0.8rem;
+    }
+    .CTA-content h2{
+        font-size: 2rem;
     }
 }
 
