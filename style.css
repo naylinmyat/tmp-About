@@ -599,6 +599,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
 }
 .footer-content p{
     color: #84899d;
+    font-weight: lighter;
 }
 .footer-content .widget-one{
     width: 32%;
@@ -652,6 +653,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
     margin-bottom: 0;
     font-size: 0.8rem;
     color: #84899d;
+    font-weight: lighter;
 }
 /* Footer end */
 
@@ -1053,6 +1055,9 @@ nav .nav-content-mobile-view .signup-btn:hover{
     .footer-content{
         flex-direction: column;
     }
+    .footer-content p{
+        font-weight: normal;
+    }
     .footer-content .widget-one,
     .footer-content .widget-two,
     .footer-content .widget-three,
@@ -1083,6 +1088,7 @@ nav .nav-content-mobile-view .signup-btn:hover{
         padding: 6% 0;
         text-align: start;
         margin-left: 10%;
+        font-weight: normal;
     }
     /* Footer Mobile View end */
 }
